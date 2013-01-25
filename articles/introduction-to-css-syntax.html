@@ -1,0 +1,144 @@
+---
+title: Introduction to CSS syntax
+
+author: Edward Akioka
+date: January 22, 2013
+layout: article
+---
+
+        <h2>Introduction</h2>
+        <p>
+            This article will cover the basics of cascading style sheets (CSS) and how to apply them<br>
+             to HTML documents. A cursory overview of CSS syntax will also be included.
+        </p>
+        <h2>Summary</h2>
+        <p>
+
+        </p>
+        <h2>What is CSS?</h2>
+        <p>
+            CSS (cascading style sheets) are documents that tell a browser how to present or style an <br>
+            HTML document. Within CSS are rule sets (also called "rules") that provide the browser with <br>
+            the information on how to display the HTML document that it is attached to. Rules can change <br>
+            anything from font size to where certain elements are placed. So, while HTML is the framework <br>
+            of the webpage, CSS is the accompanying instructions that arrange and design the webpage.
+        </p>
+
+        <h2>Basic Structure</h2>
+        <p>
+            CSS rules all follow the same basic structure: selector {property: value;}. Curly braces encase <br>
+            every block of rules and each rule ends with a semi-colon. The "selector" is the part of <br>
+            the HTML document that is affected by the rule. The "selector" can be an element (&lt;p&gt;), class <br> 
+            (&lt;p class="XYZ"&gt;), or id (&lt;p id="XYZ"&gt;). The "selector" tells the browser what part of the <br>
+            document is affected by the following rule. The "property" is what you want to change about the <br>
+            selected part of the document. This can be anything from font color to positioning. The "value" <br>
+            how much is changed. The "value" can be measurements (em, pt, cm, %,), positioning (center, left, right), <br>
+            color (color names or hex codes), or font family (serif, sanserif, Times, Helvetica). Below is an <br>
+            example of a rule that changes the text in h1 to be red.
+        </p>
+        <pre class="ex1"><code class="language-css">
+            h1 { color: red;}
+        </code></pre>
+
+        <h2>Selectors</h2>
+        <p>
+            Selectors are selective. A &lt;p&gt; "selector" will affect all &lt;p&gt; elements, a class selector will <br>
+            only affect elements with that class, and an id selector will only affect elements with that id. <br>
+            As stated above, a selector can be n element, class, or id. Each of these is inputted differently <br>
+            into CSS. An element just uses its tag with out the "&lt;" and &gt;". So a "&lt;p&gt;" element would be entered <br>
+            into CSS as "p". A class uses a "." (period) in front of the class name. So "&lt;p class= XYZ&gt;" would be <br>
+            entered as ".XYZ". An id uses a "#" (pound sign) in front of its id name. So "&lt;p id= XYZ&gt;" would be <br>
+            entered as "#XYZ". Examples of these are below.
+        </p>
+        <pre class="ex2"><code class="language-css">
+            p { color: red;}
+        .XYZ {color: red;}
+        #XYZ {color: red;}
+        </code></pre>
+        <h3>Selector Disagreement</h3>
+        <p>
+            CSS keeps selectors from disagreeing by being specific about which element that rule affects. Class <br>
+            and id selectors more specific than element selectors. This enables a classed &lt;p&gt; to be different from <br>
+            a regular &lt;p&gt;. The rule below makes the classed &lt;p&gt; have blue text while all the other &lt;p&gt; have red text.
+        </p>
+        <pre class="ex3"><code class="language-css">
+            p {color: red;}
+        .XYZ {color: blue;}
+        </code></pre>
+        <h2>Rule Grouping and White Space</h2>
+        <p>
+            Multiple rules can affect the same element. Those rules can be listed out separately or bundled together <br>
+            in the same block as shown below (this can also be done with selectors, but will be covered in the <a href=>Advanced <br>
+            CSS Selectors article</a>). The browser ignores white space, so you can put as much space between rules as you want. <br>
+            This is often done to allow for easier reading of the rules.
+        </p>
+        <pre class="ex4"><code class="language-css">
+        p {color: red;}
+        p {text-align: center;}
+
+        This is the same as below:
+
+        p {color: red; text-align: center;}
+
+        Which is the same as:
+
+        p {color: red;
+               text-align: center;}
+        </code></pre>
+        <h2></h2>
+        <p>
+            The browser reads CSS so that rules towards the bottom of the CSS document take precedence over those at <br>
+            the top. This is much like an amendment. Much like an amendment overrides those above it, a rule will <br>
+            override rules above it. This resolves conflicts between rules as shown below.<br>
+        </p>    
+            <pre class="ex5"><code class="language-css">
+            p {color: red;}
+        p {color: blue;}
+            </code></pre>
+        <p>
+            The text in the "&lt;p&gt;" element will be blue rather than red because the lower rule overrides the one above it.
+        </p>
+        <h2>Itegrating CSS with HTML</h2>
+        <p>
+            CSS can be applied to HTML in three ways: in-line, embedded, and external. In-line is done by applying <br>
+            CSS with the "style" attribute as shown below.<br>
+        </p>    
+            <pre class="ex6"><code class="language-html">
+            &lt;p style="color: red; font-family: Helvetica;"&gt;Blah&lt;/p&gt;
+            </code></pre>
+        <p> 
+            This type of CSS is useful as it will override embedded and external CSS, but it also makes it difficult <br>
+            with maintaining the webpage as the rules are scattered throughout the HTML document.<br>
+            Embedded CSS embeds CSS rules within the "&lt;head&gt;" of the document within a "&lt;style&gt;" element as shown below.<br>
+        </p>    
+            <pre class="ex7"><code class="language-html">
+        &lt;head&gt;
+        &lt;style type="text/css" media="screen"&gt;
+            p {color: blue;
+               font-family: Helvetica;
+            }
+        &lt;/style&gt;
+        &lt;/head&gt;
+            </code></pre>
+        <p> 
+            This way of integrating CSS allows one to affect the whole document rather than each individual element in <br>
+            the HTML document. It also keeps everything in one place so as to aid with maintaining the webpage.<br> 
+            External CSS takes a CSS document and links it to HTML documents using the &lt;link&gt; element within the “&lt;head&gt;” <br>
+            of the document as shown below.<br>
+        </p>    
+            <pre class="ex8"><code class="language-html">
+        &lt;head&gt;
+        &lt;link rel=“stylesheet” href=“styles.css” type=“text/css” media=“screen”&gt;
+        &lt;/head&gt;
+            </code></pre>   
+        <p> 
+            Using external CSS allows one to use one CSS document on multiple HTML documents. This keeps the style <br>
+            and look of the webpages of a document the same without having to type in the same rules over and over again.<br>
+        </p>
+        <h2>References</h2>
+            <ul>
+                <li><a href="http://docs.webplatform.org/wiki/tutorials/learning_what_css_is">http://docs.webplatform.org/wiki/tutorials/learning_what_css_is</a></li>
+                <li><a href="http://docs.webplatform.org/wiki/guides/getting_started_with_css">http://docs.webplatform.org/wiki/guides/getting_started_with_css</a></li>
+                <li><a href="http://www.w3.org/TR/CSS21/syndata.html#statements">http://www.w3.org/TR/CSS21/syndata.html#statements</a></li>
+                <li><a href="http://htmldog.com/guides/cssbeginner/selectors/">http://htmldog.com/guides/cssbeginner/selectors/</a></li>
+            </ul>
