@@ -1,0 +1,49 @@
+---
+title: HTML grouping elements
+subhead: Grouping content to your heart’s content
+
+author: Aphelandra Messer
+date: January 22, 2013
+layout: article
+---
+
+<p>No matter how many clever quips, sleek designs, and pictures of kittens you put on your webpage, it can still be ruined by poor organization. You don't want someone to visit your page and be turned off by too-long blocks of text and scattered-brained structure. So instead of sending your visitors running, read on to discover a few ways you can code your content into organized groups. This article discusses paragraphs, lists, blockquotes, preformatted text, thematic breaks, figures and captions, and div elements.</p>
+
+<h3>Paragraph Paradise</h3>
+  <p>You can wrap your paragraphs up like shiny presents by using p tags. Just put &lt;p&gt; at the beginning and &lt;/p&gt; at the end of the text, and you've designated a paragraph! From there you can style them with CSS. Remember, though, that if a more specific tag is available, you should use it instead of p tags. Case in point, our next topic...</p>
+
+  <h3>Listomania</h3>
+  <p>Three basic lists available for coding are unordered, ordered, and definition lists. Let's get profound and make a list out of lists! Listception!</p>
+<ol>
+  <li> Unordered lists. As the name suggests, these are lists in which order doesn't matter. They are organized by bullet points. The entire list is placed inside a pair of ul tags, and an li tag is used wherever a bullet point would be (meaning li tags are nested inside ul tags).</li>
+  <li> Ordered lists. You would use this list if you needed items to be in a certain order. Because this list is organized by number, it also works well if you want to emphasize how many items there are. Ordered lists are put inside ol tags, with an li tag going right before each item. Similar to unordered lists, li tags are nested inside ol tags.</li>
+  <li> Definition lists. These lists are made up of two parts: the word to be defined and, on the line directly underneath, the definition (which is indented). The whole thing is put in dl tags; the defined word is put inside dt tags; and the definition uses dd tags. To put it another way, dt and dd tags are nested inside dl tags, and a dd tag must follow a dt tag.</li>
+</ol>
+
+  <h3>Notes on Blockquotes</h3>
+  <p>To make your quote from another source stand out, use blockquote tags. They will indent all lines of the content (though, of course, blockquote properties&mdash;as well as all other elements discussed in this article&mdash;can be restyled in CSS).</p>
+
+  <h3>Up Next: Preformatted Text</h3>
+  <p>Using the pre element will make the text in the final online document look just like how it looks in the HTML file. Say you're working in an HTML file. You type in ten spaces between two words&mdash;but the browser recognizes them only as one space. Pre tags can fix that by making the browser preserve the structure of the content in the HTML file. This works not only with extra spaces, but with line breaks as well.</p>
+
+
+  <h3>A Clean Thematic Break</h3>
+  <p>When your content seems to suddenly change mood or direction, it's a good idea to signal the change with a thematic break by using the hr element. By default, an hr tag (which does not need a closing &lt;/hr&gt; tag) puts in a single gray line separating the differing paragraphs.</p>
+
+  <h3>Go Figure</h3>
+  <p>The figure element is used to mark up any photo, illustration, graph, etc. in your content. Nest figcaption tags inside the figure tags to provide a caption for your image.</p>
+
+  <h3>Div and Conquer</h3>
+  <p>If none of the grouping methods I've already discussed do the trick, it might be time to consider using the div element (or scour the links provided in Further Reading). The div element doesn't have a predefined property; it simply groups content and does whatever you style it to do. </p>
+
+  <h3>Summary</h3>
+     <p>To style paragraphs, put your content in p tags.</p>
+  <p>As a whole, unordered lists use ul tags, and ordered lists use ol tags. They both use li tags to designate individual items.</p>
+  <p>Definition lists use dl, dt, and dd tags.</p>
+  <p>Blockquotes are quotes from another source, and they use the blockquote element.</p>
+  <p>Preformatted text use pre tags and preserve the structure of your content.</p>
+  <p>Thematic breaks, which are marked up with the hr element, are used to denote a change in mood or a shift in direction.</p>
+  <p>Figure and figcaption are tags used to mark up images and their captions, respectively.</p>
+  <p>If you still want to group content but it doesn’t fit into any of the above categories, use the div element.</p>
+  <h3>Further Reading</h3>
+  <p>This article has discussed seven major methods for grouping content. To delve deeper into this topic, check out <a href="http://docs.webplatform.org/wiki/guides/html_text">this guide</a> for more details and a few more grouping elements. <a href="http://docs.webplatform.org/wiki/guides/lesser-known_semantic_elements">This</a> is another good resource; it offers elements that may be less common and very specific, but they could still prove helpful for your own webpage.</p> 

@@ -1,0 +1,79 @@
+---
+title: CSS colors, borders, &amp; backgrounds
+
+author: Cid Coto
+date: January 22, 2013
+layout: article
+---
+
+<section>
+        <h3>SUMMARY</h3>
+
+        <p>CSS has three properties; color, border, and background, which are powerful tools in any designer's CSS toolbox. Learning these properties is a valuable asset to the basic use of CSS. Expressing color in CSS has its challenges and there are a variety of ways one can choose to do so all of which are slightly different and carry their own advantages and disadvantages. Borders allow for boxes and objects to have a border of varying style, color, and width around it. Background applies to what sits behind the content, padding, and border on a website. The article to follow will expand upon these three properties in more detail.</p>
+
+      </section>
+
+      <section>  
+        <h3>INTRODUCTION</h3>
+        <p>Colors, borders, and backgrounds are important basic CSS properties to understand. These three simple properties of CSS work perfectly independently of each other, but as one starts to use them it may also be found that they all fit together and it may be hard to use one without the others. There are many options on how to use color, borders, and backgrounds including numerous colors, serval border styles, and a few ways to approach background options. All these options allow for great flexibility in a design and give the designer good tools to work with when designing a website. It will be the ability to use them effectively and seamlessly that  will help a design stand out as an awesome website. </p>
+      </section>
+
+      <section>
+        <h3>COLOR</h3>
+
+    <p>With CSS the power and creativity to use color is at the designers disposal. The basic syntax to use this property is fairly straight forward. For adjusting what will be the foreground color or text color. The syntax is as follows:
+        <pre>
+         <code>color: &lt;value&gt;</code>
+        </pre>
+For background color using the background property the syntax looks as follows:
+        <pre>
+          <code>background-color: &lt;value&gt;</code>
+        </pre>
+    CSS allows for the use of 16,777,216 colors for a designer's pallet and they can be used or selected one of three main ways including predefined keywords, RGB codes, and hexadecimal codes. The first and probably most limiting way to use color is through the 17 predefined color keyword names in CSS. They are black, white, yellow, teal, silver, red purple, orange, olive, navy, maroon, lime, green, gray, fuchsia, blue, and aqua. It may also be worth noting that transparent is a legal value as well. The following example show how this property can be called.
+        <pre>
+         <code>p{color: blue;}</code>
+        </pre>
+The second way to use color is through the use of the RGB value method which looks like the following:
+        <pre>
+         <code>color: rgb(0,0,0)</code>
+        </pre>
+These three values range from 0 to 255, 0(black) being the lowest and 255(white) the highest. These values can also be expressed as percentages from 0% - 100%. The first digit place is the amount of red,  the second green, and  third third blue. The third way to express a color value is through a hexadecimal number value using the hexadecimal numbering system. Hex, as it is often abbreviated, is a base 16 number system using decimals 0 through 9 and letter A through F allowing for a total of 16 digits 0 through F. The number is prefixed with the hash character and followed by a six digit number. The form looks as follows:
+        <pre>
+         <code>p{color:#cc9966}</code>
+        </pre>
+    For a short hand way of expressing this value it is possible to use a three digit number so <code>color:#cc9966</code> would look like <code>color:#c96</code>. While the short hand is easier to decipher, the full code gives more control. The short version also allows for smaller css files.</p>
+      </section>
+
+      <section>
+        <h3>BACKGROUND</h3>
+    <p>The next important property is the background property. It allows for much flexibility and manipulation of the background. The background in terms of the box model on a website refers to the background of the content, padding, and border area. Margins stay transparent and borders and padding can be controlled specifically as well. The background root property will cover the entire “canvas” of a website but can also be used in other HTML elements as well. An example of the syntax is:
+        <pre>
+         <code>body{background:&lt;value&gt;}</code>
+        </pre>
+In addition to the root background property  there are some expanded properties that add to the root property allowing for more functionality. These are color, image, repeat, and position. They can be used as one property as follows:
+        <pre>
+         <code>background-color: &lt;value&gt;</code>
+        </pre>
+    In addition, background-position can add on a specifically defined part such as top, bottom, left, right, center. Lastly, it stands as good practice to define a background color to be used when a background image may be specified but unavailable.</p>
+        </section>
+
+      <section>
+        <h3>BORDERS</h3>
+    <p>To set the border color and styles of an element one must use the border properties. The use of the border is straight forward and works much like the background property. Borders can be applied to most HTML elements with in the body of the HTML. Additional properties to the root border property include style, width, and color. The syntax looks like all the rest has up to this point.
+        <pre>
+         <code>border-width: &lt;value&gt;</code>
+        </pre>
+To get even more specific on placement the property looks like the following:
+        <pre>
+         <code>border-top-width: &lt;value&gt;</code>
+        </pre>
+the border-style values include a short list of solid, dotted, dashed, double, groove, ridge, inset, and outset. It is the border that can add a lot of style and flair to a website.
+    These three properties are important and and allow many options when applying color, borders, or backgrounds. Good us of these properties will allow for stellar looking websites that set them above the competition. The color, background, and border properties must work together and allow for great flexibility to help accomplish a look and feel desired by a designer. Having a good knowledge and understanding of these properties is essential and will come with practice and experiment. </p>
+        </section>
+
+      <section>
+        <h3>FURTHER READING</h3> 
+      <p>For more detail look into the following 
+        <a href="http://www.w3.org/TR/CSS21/colors.html">http://www.w3.org/TR/CSS21/colors.html</a>
+        </p>
+      </section>
