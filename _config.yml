@@ -9,6 +9,8 @@ source:      .
 destination: ./_site
 plugins:     ./_plugins
 
+exclude:     README.md
+
 future:      true
 lsi:         false
 pygments:    true
