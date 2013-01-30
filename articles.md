@@ -14,13 +14,13 @@ How the Web Works
 
 - [History of the World Wide Web](/webdesign/articles/history-of-the-world-wide-web) by Michael Webb
 - [Biography of Tim Berners-Lee](/webdesign/articles/biography-of-tim-berners-lee) by Devi Halim
-- [Introduction to Browsers and Servers](/webdesign/articles/browsers-and-servers) by Andrew Small
+- [Introduction to Browsers and Servers](/webdesign/articles/browsers-and-servers) by Andrew Smeall
 
 
 HTML
 ----
 
-- [Introduction to HTML](/webdesign/articles/introduction-to-html) by Brittney Lippencott
+- [Introduction to HTML](/webdesign/articles/introduction-to-html) by Brittney Lippincott
 - [HTML structural elements](/webdesign/articles/html-structural-elements) by Allie Lee
 - [HTML grouping elements](/webdesign/articles/html-grouping-elements) by Aphelandra Messer
 
