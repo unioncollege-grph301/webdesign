@@ -14,7 +14,7 @@ How the Web Works
 
 - [History of the World Wide Web](/webdesign/articles/history-of-the-world-wide-web) by Michael Webb
 - [Biography of Tim Berners-Lee](/webdesign/articles/biography-of-tim-berners-lee) by Devi Halim
-- [Introduction to Browsers and Servers](/webdesign/articles/browsers-and-servers) by Andrew Smeall
+- [Introduction to Browsers and Servers](/webdesign/articles/browsers-and-servers) by Andrew Smeal
 
 
 HTML
